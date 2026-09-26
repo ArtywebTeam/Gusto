@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO & Social Meta -->
+  <title>Rcs Pasticceria — Bar &amp; Pasticceria | Brescia</title>
+  <meta name="description"
+    content="Rcs Pasticceria — L'arte del dolce nel cuore di Brescia. Pasticceria artigianale, bar e caffetteria a Mompiano.">
+  <meta property="og:title" content="Rcs Pasticceria — Bar &amp; Pasticceria">
+  <meta property="og:description"
+    content="L'arte del dolce nel cuore di Brescia. The art of pastry in the heart of Brescia.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/interior.jpg">
+
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ==================== HEADER / NAVBAR ==================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+
+      <!-- Brand Logo / Name -->
+      <a href="#top" class="brand-btn" id="brandBtn">
+        <span class="brand-logo-mini" style="background-image: url('assets/images/logo.jpg');"></span>
+        <span class="brand-title">Rcs</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-desktop">
+        <span class="nav-tagline" id="navTagline">Il Nostro Mondo</span>
+        <a href="#esperienza" class="nav-link" id="navLinkExperience">Esperienza</a>
+        <a href="#vetrina" class="nav-link" id="navLinkVetrina">Vetrina</a>
+        <a href="#menu" class="nav-link" id="navLinkMenu">Menu</a>
+        <a href="#visita" class="nav-link" id="navLinkVisit">Visita</a>
+
+        <!-- Controls: Theme & Lang -->
+        <div class="nav-controls">
+          <button type="button" class="btn-control btn-theme-toggle" id="themeToggleBtn" aria-label="Toggle dark mode">
+            <!-- Sun Icon (shown in dark mode) -->
+            <svg class="theme-icon sun-icon" style="display:none; width: 1rem; height: 1rem;" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41">
+              </path>
+            </svg>
+            <!-- Moon Icon (shown in light mode) -->
+            <svg class="theme-icon moon-icon" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+            </svg>
+          </button>
+
+          <button type="button" class="btn-control btn-lang-toggle" id="langToggleBtn" aria-label="Toggle language">
+            IT&nbsp;<span style="opacity: 0.4;">|</span>&nbsp;EN&nbsp;<span class="text-accent"
+              id="langIndicator">IT</span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Controls & Hamburger -->
+      <div class="nav-mobile-toggle">
+        <button type="button" class="btn-control btn-theme-toggle" id="themeToggleBtnMobile"
+          aria-label="Toggle dark mode">
+          <svg class="theme-icon sun-icon-mobile" style="display:none; width: 1rem; height: 1rem;" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41">
+            </path>
+          </svg>
+          <svg class="theme-icon moon-icon-mobile" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="btn-control btn-lang-toggle" id="langToggleBtnMobile" aria-label="Toggle language">
+          IT&nbsp;<span style="opacity: 0.4;">|</span>&nbsp;EN&nbsp;<span class="text-accent"
+            id="langIndicatorMobile">IT</span>
+        </button>
+
+        <button type="button" class="btn-hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+          <div class="hamburger-lines">
+            <span class="hamburger-line line-1"></span>
+            <span class="hamburger-line line-2"></span>
+            <span class="hamburger-line line-3"></span>
+          </div>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="mobile-menu-drawer" id="mobileDrawer">
+      <div class="mobile-menu-links">
+        <a href="#esperienza" class="mobile-nav-link" id="mobileNavExperience">Esperienza</a>
+        <a href="#vetrina" class="mobile-nav-link" id="mobileNavVetrina">Vetrina</a>
+        <a href="#menu" class="mobile-nav-link" id="mobileNavMenu">Menu</a>
+        <a href="#visita" class="mobile-nav-link" id="mobileNavVisit">Visita</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero-section" id="top">
+    <div class="hero-bg-media">
+      <img src="assets/images/interior.jpg" alt="Interno della pasticceria Rcs" class="hero-bg-img">
+      <div class="hero-overlay-dark"></div>
+      <div class="hero-overlay-radial"></div>
+    </div>
+
+    <div class="hero-content">
+      <img src="assets/images/logo.jpg" alt="Rcs Pasticceria logo" class="hero-logo-badge">
+      <p class="hero-tagline" id="heroTagline">Bar &amp; Pasticceria · Brescia</p>
+      <h1 class="hero-title" id="heroTitle">L'arte del dolce, nel cuore di Brescia</h1>
+      <p class="hero-subtitle" id="heroSubtitle">Un rifugio di lievito, caffè e dolcezza. Dove ogni mattina comincia con
+        il profumo del cornetto caldo e ogni pomeriggio si concede una pausa.</p>
+
+      <div class="hero-cta-group">
+        <a href="https://www.google.com/maps/place/Rcs+Pasticceria/@45.5832903,10.2310383,17z" target="_blank"
+          rel="noopener noreferrer" class="btn-primary" id="heroCtaVisit">
+          <svg style="width: 1rem; height: 1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span id="heroCtaVisitText">Vieni a trovarci</span>
+          <svg class="arrow-icon" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+
+        <a href="#menu" class="btn-secondary" id="heroCtaMenu">
+          <span id="heroCtaMenuText">Scopri il menu</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <span class="scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE SECTION ==================== -->
+  <section class="section-padding section-experience" id="esperienza">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="reveal-item" style="max-width: 42rem; margin-bottom: 5rem;">
+        <p class="section-label" id="expLabel">L'Esperienza</p>
+        <h2 class="section-title" id="expTitle">Un rituale di sensi</h2>
+        <p class="section-intro" id="expIntro">Non è solo una pasticceria. È un luogo dove il tempo rallenta, dove
+          l'arco di pietra accoglie e il profumo del caffè appena macinato ti ferma sulla soglia.</p>
+      </div>
+
+      <!-- 3 Story Items -->
+      <div class="experience-list" id="experienceList">
+        <!-- Injected dynamically via JS or rendered default below -->
+
+        <!-- Item 1 -->
+        <div class="experience-item reveal-item">
+          <div class="experience-media">
+            <img src="assets/images/interior.jpg" alt="Il profumo del lievito alle 7:00" class="experience-img">
+            <div class="experience-media-ring"></div>
+          </div>
+          <div class="experience-text">
+            <p class="experience-kicker" id="expKicker0">La mattina</p>
+            <h3 class="experience-heading" id="expHeading0">Il profumo del lievito alle 7:00</h3>
+            <p class="experience-desc" id="expText0">La luce entra morbida dall'arco, il bancone bianco si riempie di
+              cornetti appena sfornati e il vapore del cappuccino si mesconde al profumo della pasta sfoglia.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 (Reversed) -->
+        <div class="experience-item reversed reveal-item">
+          <div class="experience-media">
+            <img src="assets/images/chef.jpg" alt="L'arte dietro il bancone" class="experience-img">
+            <div class="experience-media-ring"></div>
+          </div>
+          <div class="experience-text">
+            <p class="experience-kicker" id="expKicker1">Il gesto</p>
+            <h3 class="experience-heading" id="expHeading1">L'arte dietro il bancone</h3>
+            <p class="experience-desc" id="expText1">Le mani del pasticcere dosano la crema con precisione millimetrica.
+              Ogni bignè, ogni sfogliatella nasce da un gesto ripetuto, curato, mai uguale.</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="experience-item reveal-item">
+          <div class="experience-media">
+            <img src="assets/images/serving.jpg" alt="Una pausa a Mompiano" class="experience-img">
+            <div class="experience-media-ring"></div>
+          </div>
+          <div class="experience-text">
+            <p class="experience-kicker" id="expKicker2">Il pomeriggio</p>
+            <h3 class="experience-heading" id="expHeading2">Una pausa a Mompiano</h3>
+            <p class="experience-desc" id="expText2">Sotto i lampadari di metallo, tra lo sgabello turchese e il legno
+              chiaro, il tempo si concede una sospensione. Un morso, un sorso, una conversazione.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SHOWCASE SECTION ==================== -->
+  <section class="section-padding section-vetrina" id="vetrina">
+    <div class="container">
+
+      <!-- Showcase Header -->
+      <div class="vetrina-header-wrap reveal-item">
+        <div style="max-width: 36rem;">
+          <p class="section-label" id="vetrinaLabel">La Vetrina</p>
+          <h2 class="section-title" style="margin-bottom: 0;" id="vetrinaTitle">Dolci che raccontano una storia</h2>
+        </div>
+        <p class="section-intro" style="max-width: 28rem;" id="vetrinaIntro">Ogni creazione è pensata per essere
+          guardata prima che assaggiata. Sfoglia, crema, frutta fresca: la materia prima diventa arte.</p>
+      </div>
+
+      <!-- 6 Pastry Cards Grid -->
+      <div class="vetrina-grid" id="vetrinaGrid">
+        <!-- Cards injected dynamically / populated -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== MENU SECTION ==================== -->
+  <section class="section-padding section-menu" id="menu">
+    <!-- Subtle Background Decoration -->
+    <div class="menu-bg-decoration">
+      <img src="assets/images/chocolateDomes.jpg" alt="" class="menu-bg-img">
+      <div class="menu-bg-fade"></div>
+    </div>
+
+    <div class="container" style="position: relative; z-index: 2;">
+
+      <!-- Menu Header -->
+      <div class="reveal-item" style="max-width: 42rem; margin-bottom: 4rem;">
+        <p class="section-label" id="menuLabel">Il Menu</p>
+        <h2 class="section-title" id="menuTitle">Carta della casa</h2>
+        <p class="section-intro" id="menuIntro">Una selezione pensata per ogni momento della giornata, dalla colazione
+          alla merenda.</p>
+      </div>
+
+      <!-- Menu Categories 2-Column Grid -->
+      <div class="menu-grid" id="menuGrid">
+        <!-- Rendered via JS -->
+      </div>
+
+      <!-- Footer note -->
+      <p class="menu-footer-note reveal-item" id="menuFooterNote">Pasticceria artigianale dal cuore di Mompiano</p>
+    </div>
+  </section>
+
+  <!-- ==================== VISIT SECTION ==================== -->
+  <section class="section-padding section-visit" id="visita">
+    <div class="container">
+
+      <!-- Visit Header -->
+      <div class="visit-header reveal-item">
+        <p class="section-label" id="visitLabel">Visita</p>
+        <h2 class="section-title" id="visitTitle">Vieni a trovarci</h2>
+      </div>
+
+      <!-- Realtime Open / Closed Status Bar -->
+      <div class="visit-status-bar reveal-item" id="visitStatusBar">
+        <div class="status-indicator" id="statusIndicator">
+          <span class="pulse-dot-wrap">
+            <span class="pulse-dot-ping"></span>
+            <span class="pulse-dot-static"></span>
+          </span>
+          <span class="status-text" id="statusText">Aperto ora</span>
+          <span class="status-time" id="statusTime">fino alle 19:30</span>
+        </div>
+
+        <div class="visit-schedule-summary">
+          <svg style="width: 1rem; height: 1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          <span id="visitSummaryText">Mar–Sab 07:30–19:30 · Dom 08:00–13:00 · Lun chiuso</span>
+        </div>
+      </div>
+
+      <!-- Grid: Info / Schedule on Left & Map on Right -->
+      <div class="visit-content-grid">
+
+        <!-- Info Column -->
+        <div class="visit-info-column reveal-item">
+
+          <!-- Address -->
+          <div>
+            <p class="info-block-title" id="visitAddressLabel">Indirizzo</p>
+            <p class="info-address-text">Via del Brolo, 34A, 25132 Brescia BS</p>
+            <p style="color: rgba(250, 247, 242, 0.5); font-size: 0.875rem; margin-top: 0.25rem;">Mompiano, Brescia</p>
+          </div>
+
+          <!-- Schedule Table -->
+          <div>
+            <p class="info-block-title" id="visitHoursLabel">Orari</p>
+            <div class="schedule-table" id="scheduleTable">
+              <!-- Dynamically populated rows with today highlighted -->
+            </div>
+          </div>
+
+          <!-- Contact Details -->
+          <div>
+            <p class="info-block-title" id="visitContactLabel">Contatti</p>
+            <div class="contact-links-list">
+              <a href="tel:+390303456832" class="contact-item-link">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+                <span>030 345 6832</span>
+              </a>
+
+              <a href="mailto:rcspasticceria@gmail.com" class="contact-item-link">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+                <span>rcspasticceria@gmail.com</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Map Column -->
+        <div class="visit-map-column reveal-item">
+          <div class="map-embed-wrapper">
+            <iframe
+              src="https://maps.google.com/maps?q=Rcs%20Pasticceria%20Via%20del%20Brolo%2034A%20Brescia&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              class="map-iframe" loading="lazy" title="Rcs Pasticceria mappa" allowfullscreen>
+            </iframe>
+          </div>
+
+          <a href="https://www.google.com/maps/place/Rcs+Pasticceria/@45.5832903,10.2310383,17z" target="_blank"
+            rel="noopener noreferrer" class="btn-directions" id="visitDirectionsBtn">
+            <svg style="width: 1rem; height: 1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+            </svg>
+            <span id="visitDirectionsText">Ottieni indicazioni</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/images/logo.jpg" alt="Rcs logo" class="footer-logo">
+          <div>
+            <p class="footer-brand-title">Rcs</p>
+            <p class="footer-brand-subtitle" id="footerBrandSubtitle">Bar &amp; Pasticceria</p>
+          </div>
+        </div>
+
+        <div class="footer-actions">
+          <div class="google-rating-badge">
+            <svg class="star-icon" viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+            <span class="rating-score">4.5</span>
+            <span class="rating-source">· Google</span>
+          </div>
+
+          <a href="https://www.facebook.com/profile.php?id=100090723205992" target="_blank" rel="noopener noreferrer"
+            class="social-link" id="footerFacebookLink">
+            <svg style="width: 1rem; height: 1rem;" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+            <span id="footerFollowText">Seguici</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p id="footerTagline">L'arte del dolce, nel cuore di Brescia.</p>
+        <p id="footerCopyright">© <span id="currentYear"></span> Rcs Pasticceria. Tutti i diritti riservati.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
